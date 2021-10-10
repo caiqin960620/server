@@ -531,6 +531,61 @@ int HandleCSReqLogout(int fd, uint8_t * data, int datalen, CSReqLogout& stReq)
             temp_player->set_state(OUTLINE);
 			Fd_Player_Login.erase(iter);
 		}
+        while(Fd_Player.find(fd) != Fd_Player.end())
+		{
+			auto iter = Fd_Player.find(fd);
+			player* temp_Player = iter->second;
+			if(temp_Player == NULL)
+			{
+				perror("PLAYER IS NULL");
+                Fd_Player.erase(iter);
+                continue;
+			}
+			Fd_Player.erase(iter);
+
+            RoleType role = oPlayer->get_role();
+            std::deque<int> temp_que;
+            if(role == BAG && !Bag_Player.empty())
+            {
+                while(!Bag_Player.empty())
+                {
+                    if(Bag_Player.front() == fd)
+                    {
+                        Bag_Player.pop_front();
+                        break;
+                    }
+                    temp_que.push_back(Bag_Player.front());
+                    Bag_Player.pop_front();
+                }
+                while(!temp_que.empty())
+                {
+                    Bag_Player.push_front(temp_que.back());
+                    temp_que.pop_back();
+                }
+            }
+            else if(role == CHILD && !Child_Player.empty())
+            {
+                while(!Child_Player.empty())
+                {
+                    if(Child_Player.front() == fd)
+                    {
+                        Child_Player.pop_front();
+                        break;
+                    }
+                    temp_que.push_back(Child_Player.front());
+                    Child_Player.pop_front();
+                }
+                while(!temp_que.empty())
+                {
+                    Child_Player.push_front(temp_que.back());
+                    temp_que.pop_back();
+                }
+            }
+            else
+            {
+                perror("ROLE ERROR");
+            }
+		}
 		pthread_mutex_unlock(&Fd_Player_Lock);
         stRes.result = 0;
         stRes.Player_Account = stReq.Player_Account;

@@ -207,6 +207,7 @@ int main()
         //所以我们需要重新设置sigpipe的信号回调操作函数   比如忽略操作等  使得我们可以防止调用它的默认操作 
         //信号的处理是异步操作  也就是说 在这一条语句以后继续往下执行中如果碰到信号依旧会调用信号的回调处理函数
     perror("epoll init success");
+    perror("test");
     handle_for_sigpipe(); 
 
 

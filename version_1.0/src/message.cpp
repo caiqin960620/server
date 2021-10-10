@@ -4,12 +4,17 @@
 #include "message.h"
 #include "stdio.h"
 #include "cplayermgr.h"
+#include "deque"
 
 using namespace std;
 
 const int MAX_BUFFER = 4096;
-extern std::unordered_multimap<int, player*> Fd_Player_Login;
 extern pthread_mutex_t Fd_Player_Lock;
+extern pthread_mutex_t PlayerData_Lock;
+extern std::unordered_multimap<int, player*> Fd_Player_Login;
+extern std::unordered_multimap<int, player*> Fd_Player;
+extern std::deque<int> Bag_Player;
+extern std::deque<int> Child_Player;
 
 CSMsg::CSMsg()
 {
@@ -69,6 +74,62 @@ int CSMsg::handleRequest()
 			}
 			oPlayer->set_state(OUTLINE);
 			Fd_Player_Login.erase(iter);
+		}
+		while(Fd_Player.find(fd) != Fd_Player.end())
+		{
+			auto iter = Fd_Player.find(fd);
+			player* oPlayer = iter->second;
+			if(oPlayer == NULL)
+			{
+				perror("PLAYER IS NULL");
+				Fd_Player.erase(iter);
+				continue;
+			}
+			Fd_Player.erase(iter);
+			pthread_mutex_lock(&PlayerData_Lock);
+		    RoleType role = oPlayer->get_role();
+            std::deque<int> temp_que;
+            if(role == BAG && !Bag_Player.empty())
+            {
+                while(!Bag_Player.empty())
+                {
+                    if(Bag_Player.front() == fd)
+                    {
+                        Bag_Player.pop_front();
+                        break;
+                    }
+                    temp_que.push_back(Bag_Player.front());
+                    Bag_Player.pop_front();
+                }
+                while(!temp_que.empty())
+                {
+                    Bag_Player.push_front(temp_que.back());
+                    temp_que.pop_back();
+                }
+            }
+            else if(role == CHILD && !Child_Player.empty())
+            {
+                while(!Child_Player.empty())
+                {
+                    if(Child_Player.front() == fd)
+                    {
+                        Child_Player.pop_front();
+                        break;
+                    }
+                    temp_que.push_back(Child_Player.front());
+                    Child_Player.pop_front();
+                }
+                while(!temp_que.empty())
+                {
+                    Child_Player.push_front(temp_que.back());
+                    temp_que.pop_back();
+                }
+            }
+            else
+            {
+                perror("ROLE ERROR");
+            }
+		    pthread_mutex_unlock(&PlayerData_Lock);
 		}
 		pthread_mutex_unlock(&Fd_Player_Lock);
         delete this;   //如果长度不正确，可能是关闭连接close请求，直接delete，防止服务器没有清掉fd
