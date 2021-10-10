@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -march=native -O3 -pthread  -O0 -Wall -g2 -ggdb
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/data/lukacai/minigame/minigame_server/version_1.0/include 
+CXX_INCLUDES = -I/data/lukacai/minigame/cloud_server/version_1.0/include 
 

@@ -63,10 +63,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/lukacai/minigame/minigame_server/version_1.0
+CMAKE_SOURCE_DIR = /data/lukacai/minigame/cloud_server/version_1.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/lukacai/minigame/minigame_server/version_1.0/build
+CMAKE_BINARY_DIR = /data/lukacai/minigame/cloud_server/version_1.0/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MyWebServer.dir/depend.make
@@ -79,120 +79,120 @@ include CMakeFiles/MyWebServer.dir/flags.make
 
 CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.o: CMakeFiles/MyWebServer.dir/flags.make
 CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.o: ../src/cplayermgr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.o -c /data/lukacai/minigame/minigame_server/version_1.0/src/cplayermgr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.o -c /data/lukacai/minigame/cloud_server/version_1.0/src/cplayermgr.cpp
 
 CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/minigame_server/version_1.0/src/cplayermgr.cpp > CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/cloud_server/version_1.0/src/cplayermgr.cpp > CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.i
 
 CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/minigame_server/version_1.0/src/cplayermgr.cpp -o CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/cloud_server/version_1.0/src/cplayermgr.cpp -o CMakeFiles/MyWebServer.dir/src/cplayermgr.cpp.s
 
 CMakeFiles/MyWebServer.dir/src/data.cpp.o: CMakeFiles/MyWebServer.dir/flags.make
 CMakeFiles/MyWebServer.dir/src/data.cpp.o: ../src/data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyWebServer.dir/src/data.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/data.cpp.o -c /data/lukacai/minigame/minigame_server/version_1.0/src/data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyWebServer.dir/src/data.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/data.cpp.o -c /data/lukacai/minigame/cloud_server/version_1.0/src/data.cpp
 
 CMakeFiles/MyWebServer.dir/src/data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyWebServer.dir/src/data.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/minigame_server/version_1.0/src/data.cpp > CMakeFiles/MyWebServer.dir/src/data.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/cloud_server/version_1.0/src/data.cpp > CMakeFiles/MyWebServer.dir/src/data.cpp.i
 
 CMakeFiles/MyWebServer.dir/src/data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyWebServer.dir/src/data.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/minigame_server/version_1.0/src/data.cpp -o CMakeFiles/MyWebServer.dir/src/data.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/cloud_server/version_1.0/src/data.cpp -o CMakeFiles/MyWebServer.dir/src/data.cpp.s
 
 CMakeFiles/MyWebServer.dir/src/epoll.cpp.o: CMakeFiles/MyWebServer.dir/flags.make
 CMakeFiles/MyWebServer.dir/src/epoll.cpp.o: ../src/epoll.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyWebServer.dir/src/epoll.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/epoll.cpp.o -c /data/lukacai/minigame/minigame_server/version_1.0/src/epoll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyWebServer.dir/src/epoll.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/epoll.cpp.o -c /data/lukacai/minigame/cloud_server/version_1.0/src/epoll.cpp
 
 CMakeFiles/MyWebServer.dir/src/epoll.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyWebServer.dir/src/epoll.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/minigame_server/version_1.0/src/epoll.cpp > CMakeFiles/MyWebServer.dir/src/epoll.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/cloud_server/version_1.0/src/epoll.cpp > CMakeFiles/MyWebServer.dir/src/epoll.cpp.i
 
 CMakeFiles/MyWebServer.dir/src/epoll.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyWebServer.dir/src/epoll.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/minigame_server/version_1.0/src/epoll.cpp -o CMakeFiles/MyWebServer.dir/src/epoll.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/cloud_server/version_1.0/src/epoll.cpp -o CMakeFiles/MyWebServer.dir/src/epoll.cpp.s
 
 CMakeFiles/MyWebServer.dir/src/main.cpp.o: CMakeFiles/MyWebServer.dir/flags.make
 CMakeFiles/MyWebServer.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyWebServer.dir/src/main.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/main.cpp.o -c /data/lukacai/minigame/minigame_server/version_1.0/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyWebServer.dir/src/main.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/main.cpp.o -c /data/lukacai/minigame/cloud_server/version_1.0/src/main.cpp
 
 CMakeFiles/MyWebServer.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyWebServer.dir/src/main.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/minigame_server/version_1.0/src/main.cpp > CMakeFiles/MyWebServer.dir/src/main.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/cloud_server/version_1.0/src/main.cpp > CMakeFiles/MyWebServer.dir/src/main.cpp.i
 
 CMakeFiles/MyWebServer.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyWebServer.dir/src/main.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/minigame_server/version_1.0/src/main.cpp -o CMakeFiles/MyWebServer.dir/src/main.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/cloud_server/version_1.0/src/main.cpp -o CMakeFiles/MyWebServer.dir/src/main.cpp.s
 
 CMakeFiles/MyWebServer.dir/src/message.cpp.o: CMakeFiles/MyWebServer.dir/flags.make
 CMakeFiles/MyWebServer.dir/src/message.cpp.o: ../src/message.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyWebServer.dir/src/message.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/message.cpp.o -c /data/lukacai/minigame/minigame_server/version_1.0/src/message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyWebServer.dir/src/message.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/message.cpp.o -c /data/lukacai/minigame/cloud_server/version_1.0/src/message.cpp
 
 CMakeFiles/MyWebServer.dir/src/message.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyWebServer.dir/src/message.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/minigame_server/version_1.0/src/message.cpp > CMakeFiles/MyWebServer.dir/src/message.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/cloud_server/version_1.0/src/message.cpp > CMakeFiles/MyWebServer.dir/src/message.cpp.i
 
 CMakeFiles/MyWebServer.dir/src/message.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyWebServer.dir/src/message.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/minigame_server/version_1.0/src/message.cpp -o CMakeFiles/MyWebServer.dir/src/message.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/cloud_server/version_1.0/src/message.cpp -o CMakeFiles/MyWebServer.dir/src/message.cpp.s
 
 CMakeFiles/MyWebServer.dir/src/player.cpp.o: CMakeFiles/MyWebServer.dir/flags.make
 CMakeFiles/MyWebServer.dir/src/player.cpp.o: ../src/player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyWebServer.dir/src/player.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/player.cpp.o -c /data/lukacai/minigame/minigame_server/version_1.0/src/player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyWebServer.dir/src/player.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/player.cpp.o -c /data/lukacai/minigame/cloud_server/version_1.0/src/player.cpp
 
 CMakeFiles/MyWebServer.dir/src/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyWebServer.dir/src/player.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/minigame_server/version_1.0/src/player.cpp > CMakeFiles/MyWebServer.dir/src/player.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/cloud_server/version_1.0/src/player.cpp > CMakeFiles/MyWebServer.dir/src/player.cpp.i
 
 CMakeFiles/MyWebServer.dir/src/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyWebServer.dir/src/player.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/minigame_server/version_1.0/src/player.cpp -o CMakeFiles/MyWebServer.dir/src/player.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/cloud_server/version_1.0/src/player.cpp -o CMakeFiles/MyWebServer.dir/src/player.cpp.s
 
 CMakeFiles/MyWebServer.dir/src/requestData.cpp.o: CMakeFiles/MyWebServer.dir/flags.make
 CMakeFiles/MyWebServer.dir/src/requestData.cpp.o: ../src/requestData.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyWebServer.dir/src/requestData.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/requestData.cpp.o -c /data/lukacai/minigame/minigame_server/version_1.0/src/requestData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyWebServer.dir/src/requestData.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/requestData.cpp.o -c /data/lukacai/minigame/cloud_server/version_1.0/src/requestData.cpp
 
 CMakeFiles/MyWebServer.dir/src/requestData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyWebServer.dir/src/requestData.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/minigame_server/version_1.0/src/requestData.cpp > CMakeFiles/MyWebServer.dir/src/requestData.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/cloud_server/version_1.0/src/requestData.cpp > CMakeFiles/MyWebServer.dir/src/requestData.cpp.i
 
 CMakeFiles/MyWebServer.dir/src/requestData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyWebServer.dir/src/requestData.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/minigame_server/version_1.0/src/requestData.cpp -o CMakeFiles/MyWebServer.dir/src/requestData.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/cloud_server/version_1.0/src/requestData.cpp -o CMakeFiles/MyWebServer.dir/src/requestData.cpp.s
 
 CMakeFiles/MyWebServer.dir/src/threadpool.cpp.o: CMakeFiles/MyWebServer.dir/flags.make
 CMakeFiles/MyWebServer.dir/src/threadpool.cpp.o: ../src/threadpool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyWebServer.dir/src/threadpool.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/threadpool.cpp.o -c /data/lukacai/minigame/minigame_server/version_1.0/src/threadpool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyWebServer.dir/src/threadpool.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/threadpool.cpp.o -c /data/lukacai/minigame/cloud_server/version_1.0/src/threadpool.cpp
 
 CMakeFiles/MyWebServer.dir/src/threadpool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyWebServer.dir/src/threadpool.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/minigame_server/version_1.0/src/threadpool.cpp > CMakeFiles/MyWebServer.dir/src/threadpool.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/cloud_server/version_1.0/src/threadpool.cpp > CMakeFiles/MyWebServer.dir/src/threadpool.cpp.i
 
 CMakeFiles/MyWebServer.dir/src/threadpool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyWebServer.dir/src/threadpool.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/minigame_server/version_1.0/src/threadpool.cpp -o CMakeFiles/MyWebServer.dir/src/threadpool.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/cloud_server/version_1.0/src/threadpool.cpp -o CMakeFiles/MyWebServer.dir/src/threadpool.cpp.s
 
 CMakeFiles/MyWebServer.dir/src/util.cpp.o: CMakeFiles/MyWebServer.dir/flags.make
 CMakeFiles/MyWebServer.dir/src/util.cpp.o: ../src/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyWebServer.dir/src/util.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/util.cpp.o -c /data/lukacai/minigame/minigame_server/version_1.0/src/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyWebServer.dir/src/util.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyWebServer.dir/src/util.cpp.o -c /data/lukacai/minigame/cloud_server/version_1.0/src/util.cpp
 
 CMakeFiles/MyWebServer.dir/src/util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyWebServer.dir/src/util.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/minigame_server/version_1.0/src/util.cpp > CMakeFiles/MyWebServer.dir/src/util.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/lukacai/minigame/cloud_server/version_1.0/src/util.cpp > CMakeFiles/MyWebServer.dir/src/util.cpp.i
 
 CMakeFiles/MyWebServer.dir/src/util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyWebServer.dir/src/util.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/minigame_server/version_1.0/src/util.cpp -o CMakeFiles/MyWebServer.dir/src/util.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/lukacai/minigame/cloud_server/version_1.0/src/util.cpp -o CMakeFiles/MyWebServer.dir/src/util.cpp.s
 
 # Object files for target MyWebServer
 MyWebServer_OBJECTS = \
@@ -220,7 +220,7 @@ MyWebServer_EXTERNAL_OBJECTS =
 ../bin/MyWebServer: CMakeFiles/MyWebServer.dir/src/util.cpp.o
 ../bin/MyWebServer: CMakeFiles/MyWebServer.dir/build.make
 ../bin/MyWebServer: CMakeFiles/MyWebServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../bin/MyWebServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../bin/MyWebServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyWebServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -233,6 +233,6 @@ CMakeFiles/MyWebServer.dir/clean:
 .PHONY : CMakeFiles/MyWebServer.dir/clean
 
 CMakeFiles/MyWebServer.dir/depend:
-	cd /data/lukacai/minigame/minigame_server/version_1.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/lukacai/minigame/minigame_server/version_1.0 /data/lukacai/minigame/minigame_server/version_1.0 /data/lukacai/minigame/minigame_server/version_1.0/build /data/lukacai/minigame/minigame_server/version_1.0/build /data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles/MyWebServer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/lukacai/minigame/cloud_server/version_1.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/lukacai/minigame/cloud_server/version_1.0 /data/lukacai/minigame/cloud_server/version_1.0 /data/lukacai/minigame/cloud_server/version_1.0/build /data/lukacai/minigame/cloud_server/version_1.0/build /data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles/MyWebServer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MyWebServer.dir/depend
 

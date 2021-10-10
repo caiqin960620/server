@@ -1,3 +1,3 @@
-/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles/rebuild_cache.dir
-/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles/MyWebServer.dir
-/data/lukacai/minigame/minigame_server/version_1.0/build/CMakeFiles/edit_cache.dir
+/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles/rebuild_cache.dir
+/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles/MyWebServer.dir
+/data/lukacai/minigame/cloud_server/version_1.0/build/CMakeFiles/edit_cache.dir
